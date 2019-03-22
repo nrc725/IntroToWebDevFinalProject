@@ -1,0 +1,32 @@
+<?php
+
+# list_songs.php - list all the cores
+   
+require_once('Connect.php');
+require_once('debughelp.php');
+ 
+$dbh = ConnectDB();
+ 
+try {
+	$query = 'select * from songs';
+	$stmt = $dbh->prepare($query);
+	$stmt->execute();
+	$result = $stmt->fetchAll(PDO::FETCH_OBJ);
+    $stmt = null;
+}
+catch(PDOException $e)
+{
+    die ('PDO error listing people": ' . $e->getMessage() );
+}
+
+
+echo "<pre id='fav_songs'>Your Favorite Songs: \n";
+foreach ($result as $song_info) 
+{
+	echo "ID: ", $song_info->song_id .
+		"\tSong: ", $song_info->song_name .
+		"\tArtist: ", $song_info->artist_name , "\n";
+}
+echo "</pre>\n";
+
+?>

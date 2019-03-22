@@ -1,0 +1,52 @@
+/*
+	CSS Page for when the screen is 1000px or more, design to have lyrics and favorite song list be side-by-side with each other on the screen 
+*/
+@media screen and (min-width: 1000px) {
+
+  #top {  
+    text-align: center;
+    font-size:40px;
+    background-color: rgb(226, 44, 44);
+  }
+  
+  #player
+  {
+    margin: 0 auto;
+    display:block;
+  }
+  
+  #add_song
+  {
+    margin: 0 auto;
+  }
+
+  
+  #lyrics
+  {
+    margin: 0 auto;
+    display: inline-block;
+    position:absolute;
+    width:300px;
+    left:25%;
+    display: block;
+
+  }
+  
+  
+  #fav_songs
+  {
+    margin: 0 auto;
+    left: 50%;
+    position: absolute;
+  }
+
+  #bottombar { bottom: 0px;
+    padding: 3px;
+    margin: 0px;
+    width:100%;
+    position: fixed;
+    background-color: rgb(226, 44, 44);
+    overflow: hidden;
+  }
+
+}

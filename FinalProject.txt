@@ -1,0 +1,15 @@
+/*
+ *Table to store users favorite songs
+ */
+
+/*Songs:
+ *	Song Name: varchar(30)
+ *  Artist Name: varchar(30) 
+ */
+CREATE TABLE songs (
+   song_id   int(7)   NOT NULL auto_increment,
+   song_name       varchar(30),
+   artist_name      varchar(30),
+   PRIMARY KEY(song_id)
+);
+

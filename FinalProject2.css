@@ -1,0 +1,49 @@
+/*
+	CSS Page for when the screen is 1000px or less, avoids lyrics and songs list from clipping by putting the song list below the lyrics
+*/
+@media screen and (max-width: 1000px) {
+
+  #top {  
+    text-align: center;
+    font-size:40px;
+    background-color: rgb(226, 44, 44);
+  }
+ 
+  #player
+  {
+    margin: 0 auto;
+    display:block;
+  }
+
+  #add_song
+  {
+    margin: 0 auto;
+  }
+
+  #lyrics
+  {
+    margin: 0 auto;
+    display: inline-block;
+    position:absolute;
+    width:300px;
+    display: block;
+
+  }
+  
+  #fav_songs
+  {
+    margin: 0 auto;
+    left: 50%;
+    position: absolute;
+  }
+
+  #bottombar { bottom: 0px;
+    padding: 3px;
+    margin: 0px;
+    width:100%;
+    position: fixed;
+    background-color: rgb(226, 44, 44);
+    overflow: hidden;
+  }
+
+}

@@ -1,0 +1,29 @@
+My submission for my Web Development Final Project is a website that when given an artist and a song name can find a youtube video and the lyrics for the song. 
+Along with this the user can add the song to a favorite songs list which is a table that is stored in a MySql database. 
+I tried my best to eliminate most of the issues I encountered while working on this project, but there are some things I want to point out before you look at the project:
+
+-While the musixmatch api has the lyrics for most songs you search up, it seems that they do not have permission to show lyrics for every artist on their website. 
+I added a message to be printed out to catch when that is the case, but it only showed up for some select artists I tried and the majority that I tested work fine.
+
+-Some youtube videos do not have permission from the uploader to be played when you embed them in a website, but again I didn't encounter this a whole lot.
+
+-I tried my best to fix the issue discussed in class where the video of a song that was loaded in would still appear after you click the back button to return to the page
+however I had trouble understanding why it was still on the page and how I could reset it before it showed up again so I tried my best to resolve the bug, but there still might be issues.
+surrounding when you go back to a page.
+
+-The main file is a FinalProject.php and the only php code that is found in this file lists out the favorite songs of the user and is the same code located in list_songs.txt file  
+
+
+
+Here is an index of what each file in this directory to hopefully make it easier for you to find where things are located:
+	
+	FinalProject.js- the code behind the api calls used in the project	 
+    FinalProject.php- The main file of the project 	 
+    FinalProject.txt- schema for the songs table I made in MySQL.	
+	FinalProject.css- Style sheet for when screen is wider then 1000px
+	FinalProject2.css- Style sheet for when screen is smaller than 1000px			 
+	add_song.php- the php file that adds a song to the favorite song table in the database		 
+	add_song.txt- the text file of add_song.php so you can see the code in that file	
+	list_songs.txt- the block of php code that is used in FinalProject.php 
+
+If there are any other questions you have about the project you can email me, otherwise have a nice break!
